@@ -1,27 +1,15 @@
 import React from "react";
-import styled from "styled-components";
+import { Card } from "./layout/card/Card";
+import imgCard from "./../src/assets/images/imgcard.png";
 
 function App() {
   return (
-    <div>
-      <img src="" alt="" />
-      <Title>Headline</Title>
-      <p>
-        Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie
-        ornare in venen.
-      </p>
-      <div>
-        <button>See more</button>
-        <button>See more</button>
-      </div>
-    </div>
+    <Card
+      title="Headline"
+      text="Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen."
+      src={imgCard}
+    />
   );
 }
 
 export default App;
-
-const Title = styled.h1`
-  font-size: 1.5rem;
-  text-align: center;
-  color: red;
-`;
